@@ -22,7 +22,7 @@ install xclip
 
 # zsh
 
-ZSH=$HOME/config/dotfiles/oh-my-zsh
+export ZSH=$HOME/config/dotfiles/oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git $ZSH/custom/themes/powerlevel9k
 
