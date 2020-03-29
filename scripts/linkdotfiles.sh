@@ -27,11 +27,12 @@ function linkDotfile {
 
 linkDotfile .vim
 linkDotfile .vimrc
-linkDotfile .bashrc
+#linkDotfile .bashrc
 linkDotfile .gitconfig
 linkDotfile .tmux.conf
+linkDotfile .zshrc
 
-mkdir -p $dotfilesDir/.vim/bundle
-cd $dotfilesDir/.vim/bundle
-git clone git://github.com/VundleVim/Vundle.vim.git
-vim +PluginInstall +qall
+#mkdir -p $dotfilesDir/.vim/bundle
+#cd $dotfilesDir/.vim/bundle
+#git clone git://github.com/VundleVim/Vundle.vim.git
+#vim +PluginInstall +qall
