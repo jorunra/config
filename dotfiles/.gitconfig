@@ -1,0 +1,12 @@
+[user]
+  email = jorun@git
+  name = jorun
+
+[core]
+  editor = nvim
+
+[alias]
+  st = status
+  co = checkout
+  unstage = reset HEAD
+  undo = reset --soft HEAD^
