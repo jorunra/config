@@ -11,6 +11,61 @@ function install {
   fi
 }
 
+
+function installOhMyZsh {
+
+  export ZSH=$HOME/config/dotfiles/oh-my-zsh
+  if [ ! -d $ZSH ]; then
+    echo "Installing: oh-my-zsh..."
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    git clone https://github.com/bhilburn/powerlevel9k.git $ZSH/custom/themes/powerlevel9k
+  else
+    echo "Already installed: oh-my-zsh"
+  fi
+
+}
+
+function installCode {
+
+  which code &> /dev/null
+
+  if [ $? -ne 0 ]; then
+    echo "Installing: code..."
+    wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+    sudo apt update
+    sudo apt install code
+  else
+    echo "Already installed: code"
+  fi
+
+}
+
+function installSmerge {
+
+  which smerge &> /dev/null
+
+  if [ $? -ne 0 ]; then
+    echo "Installing: smerge..."
+    wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+    sudo apt-get install apt-transport-https
+    echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+    sudo apt-get update
+    sudo apt-get install sublime-merge
+
+    if [ ! -d ~/bin ]; then
+      mkdir ~/bin
+    fi
+
+    ln -s /opt/sublime_merge/sublime_merge ~/bin/smerge
+
+  else
+    echo "Already installed: smerge"
+  fi
+
+}
+
+
 install git
 install zsh
 install tmux
@@ -19,17 +74,7 @@ install curl
 install tree
 install xclip
 
+installCode
+installOhMyZsh
+installSmerge
 
-# zsh
-
-export ZSH=$HOME/config/dotfiles/oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/bhilburn/powerlevel9k.git $ZSH/custom/themes/powerlevel9k
-
-
-# vscode
-
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt update
-sudo apt install code
