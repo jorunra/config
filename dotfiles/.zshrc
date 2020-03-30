@@ -104,4 +104,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+source ~/.profile
 bash $HOME/config/color/adjust_color_palette.sh
