@@ -14,8 +14,8 @@ function install {
 
 function installOhMyZsh {
 
-  export ZSH=$HOME/config/dotfiles/oh-my-zsh
-  if [ ! -d $ZSH ]; then
+  export ZSH=~/.oh-my-zsh
+  if [ -h $ZSH ]; then
     echo "Installing: oh-my-zsh..."
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     git clone https://github.com/bhilburn/powerlevel9k.git $ZSH/custom/themes/powerlevel9k
@@ -75,6 +75,5 @@ install tree
 install xclip
 
 installCode
-installOhMyZsh
 installSmerge
 
