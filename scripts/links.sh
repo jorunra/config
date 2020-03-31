@@ -9,7 +9,15 @@ if  [ ! -d ${dotdirsDir} ]; then
 fi
 
 function linkfile {
-  dest="${HOME}/${1}"
+
+  if [ $# -eq 2 ]; then 
+    dest="${2}/${1}"
+  else
+    dest="${HOME}/${1}"
+  fi
+
+  echo "link $1 to $dest"
+
   sourceDir=${dotfilesDir}
   dateStr=$(date +%Y-%m-%d-%H%M)
 
@@ -68,7 +76,8 @@ linkfile .vimrc
 linkfile .gitconfig
 linkfile .tmux.conf
 linkfile .zshrc
-#linkfile .bashrc
+
+linkfile settings.json ~/.config/Code/User/
 
 linkdir .vim
 linkdir .oh-my-zsh
