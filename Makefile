@@ -7,12 +7,13 @@ commit_push:
 
 update_config: add_existing commit_push
 
-subdirs = color \
-		  dotdirs \
-		  dotfiles \
-		  fonts \
-		  Makefile \
-		  scripts
+subdirs = \
+          color \
+          dotdirs \
+          dotfiles \
+          fonts \
+          Makefile \
+          scripts
 
 config.tgz:
 	tar zvfc $@ $(subdirs)
