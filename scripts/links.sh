@@ -77,7 +77,7 @@ linkfile .gitconfig
 linkfile .tmux.conf
 linkfile .zshrc
 
-linkfile settings.json ~/.config/Code/User/
+linkfile settings.json ~/.config/Code/User
 
 linkdir .vim
 linkdir .oh-my-zsh

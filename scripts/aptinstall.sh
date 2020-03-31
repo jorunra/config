@@ -66,13 +66,14 @@ function installSmerge {
 }
 
 
-install git
-install zsh
-install tmux
-install neovim
 install curl
+install git
+install make
+install neovim
+install tmux
 install tree
 install xclip
+install zsh
 
 installCode
 installSmerge
