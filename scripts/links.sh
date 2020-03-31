@@ -84,7 +84,7 @@ linkdir .oh-my-zsh
 linkdir .tmux
 linkdir .vscode
 
-#mkdir -p $dotfilesDir/.vim/bundle
-#cd $dotfilesDir/.vim/bundle
+#mkdir -p $dotdirsDir/.vim/bundle
+#cd $dotdirsDir/.vim/bundle
 #git clone git://github.com/VundleVim/Vundle.vim.git
 #vim +PluginInstall +qall
