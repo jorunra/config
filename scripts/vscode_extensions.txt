@@ -1,0 +1,16 @@
+13xforever.language-x86-64-assembly
+arcticicestudio.nord-visual-studio-code
+donjayamanne.githistory
+eamodio.gitlens
+foxundermoon.shell-format
+Gruntfuggly.todo-tree
+jeff-hykin.better-shellscript-syntax
+ms-python.python
+ms-vscode.cpptools
+ms-vscode.Go
+msyrus.go-doc
+slevesque.vscode-hexdump
+streetsidesoftware.code-spell-checker
+vscode-icons-team.vscode-icons
+vscodevim.vim
+yzhang.markdown-all-in-one
