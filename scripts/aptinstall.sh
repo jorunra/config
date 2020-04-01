@@ -41,6 +41,21 @@ function installCode {
 
 }
 
+function installGo {
+
+  which go &> /dev/null
+
+  if [ $? -ne 0 ]; then 
+    version="1.14.1"
+    os="linux"
+    arch="amd64"
+
+    echo "Installing: go$version..."
+    wget -c https://dl.google.com/go/go$version.$os-$arch.tar.gz -O - | sudo tar -xz -C /usr/local 
+    export PATH=$PATH:/usr/local/go/bin
+   fi
+}
+
 function installSmerge {
 
   which smerge &> /dev/null
@@ -77,4 +92,5 @@ install zsh
 
 installCode
 installSmerge
+installGo
 

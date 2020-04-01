@@ -83,6 +83,7 @@ linkdir .vim
 linkdir .oh-my-zsh
 linkdir .tmux
 linkdir .vscode
+linkdir go
 
 #mkdir -p $dotdirsDir/.vim/bundle
 #cd $dotdirsDir/.vim/bundle
