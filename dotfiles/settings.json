@@ -2,5 +2,6 @@
     "workbench.colorTheme": "Nord",
     "C_Cpp.updateChannel": "Insiders",
     "workbench.iconTheme": "vscode-icons",
-    "terminal.integrated.fontFamily": "UbuntuMonoDerivativePowerline Nerd Font"
+    "terminal.integrated.fontFamily": "UbuntuMonoDerivativePowerline Nerd Font",
+    "todo-tree.tree.showScanModeButton": false
 }
