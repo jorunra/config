@@ -105,4 +105,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.profile
+export PATH=$PATH:/usr/local/go/bin
 bash $HOME/config/color/adjust_color_palette.sh

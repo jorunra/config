@@ -42,7 +42,13 @@ function linkfile {
 }
 
 function linkdir {
-  dest="${HOME}/${1}"
+
+  if [ $# -eq 2 ]; then 
+    dest="${2}/${1}"
+  else
+    dest="${HOME}/${1}"
+  fi
+
   sourceDir=${dotdirsDir}
   dateStr=$(date +%Y-%m-%d-%H%M)
 
@@ -72,20 +78,15 @@ function linkdir {
 }
 
 
-linkfile .vimrc
 linkfile .gitconfig
 linkfile .tmux.conf
 linkfile .zshrc
 
 linkfile settings.json ~/.config/Code/User
 
-linkdir .vim
 linkdir .oh-my-zsh
 linkdir .tmux
 linkdir .vscode
 linkdir go
-
-#mkdir -p $dotdirsDir/.vim/bundle
-#cd $dotdirsDir/.vim/bundle
-#git clone git://github.com/VundleVim/Vundle.vim.git
-#vim +PluginInstall +qall
+linkdir autoload ~/.local/share/nvim/site
+linkdir nvim ~/.config
