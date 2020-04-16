@@ -12,7 +12,6 @@ subdirs = \
           dotdirs \
           dotfiles \
           fonts \
-          Makefile \
           scripts
 
 config.tgz:

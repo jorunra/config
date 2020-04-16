@@ -14,3 +14,4 @@ do
   # take action on each file. $f store current file name
   cp "$f" $fontsDir
 done
+
