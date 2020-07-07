@@ -7,6 +7,7 @@ donjayamanne.githistory
 eamodio.gitlens
 EditorConfig.EditorConfig
 foxundermoon.shell-format
+golang.go
 Gruntfuggly.todo-tree
 jakob-erzar.llvm-tablegen
 jeff-hykin.better-c-syntax
@@ -18,9 +19,9 @@ mhutchie.git-graph
 ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.cpptools
-ms-vscode.Go
 ms-vscode.powershell
 msyrus.go-doc
+redhat.vscode-yaml
 RReverser.llvm
 slevesque.vscode-hexdump
 streetsidesoftware.code-spell-checker

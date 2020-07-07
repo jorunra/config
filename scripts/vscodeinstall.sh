@@ -1,8 +1,8 @@
 extensions_file=vscode_extensions.txt
 extensions=$(cat $extensions_file)
 
-for ext in $extensions
-do
+for ext in $extensions; do
   echo "Installing $ext"
+  #code --uninstall-extension $ext
   code --install-extension $ext
 done
