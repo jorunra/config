@@ -7,13 +7,18 @@ commit_push:
 
 update_config: add_existing commit_push
 
+dotfiles = \
+    dotfiles/.tmux.conf \
+    dotfiles/.zshrc \
+    dotfiles/settings.json \
+
 subdirs = \
+          $(dotfiles) \
           color \
           dotdirs \
-          dotfiles \
           fonts \
           scripts
 
 config.tgz:
-	tar zvfc $@ $(subdirs)
+	tar zfc $@ $(subdirs)
 
