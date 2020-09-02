@@ -21,6 +21,7 @@ ms-python.python
 ms-vscode.cpptools
 ms-vscode.powershell
 msyrus.go-doc
+notskm.clang-tidy
 redhat.vscode-yaml
 RReverser.llvm
 slevesque.vscode-hexdump
