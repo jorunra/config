@@ -4,8 +4,33 @@
     "terminal.integrated.fontFamily": "UbuntuMonoDerivativePowerline Nerd Font",
     "terminal.integrated.fontsize": 14,
     "todo-tree.tree.showScanModeButton": false,
-    "todo-tree.highlights.enabled" : true,
+    "todo-tree.highlights.enabled": true,
     "extensions.autoUpdate": true,
-    "editor.formatOnSave" : true,
-    "files.autoSave" : "onFocusChange"
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "C_Cpp.updateChannel": "Insiders",
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        // Optional: Disable snippets, as they conflict with completion ranking.
+        "editor.snippetSuggestions": "none"
+    },
+    "[go.mod]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "gopls": {
+        // Add parameter placeholders when completing a function.
+        "usePlaceholders": true,
+        // If true, enable additional analyses with staticcheck.
+        // Warning: This will significantly increase memory usage.
+        "staticcheck": false
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "python.pythonPath": "/bin/python3"
 }

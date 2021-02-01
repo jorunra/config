@@ -22,3 +22,6 @@ subdirs = \
 config.tgz:
 	tar zfc $@ $(subdirs)
 
+
+vscode_extentions.tgz:
+	tar zfc $@ dotdirs
