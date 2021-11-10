@@ -11,6 +11,7 @@ dotfiles = \
     dotfiles/.tmux.conf \
     dotfiles/.zshrc \
     dotfiles/settings.json \
+    dotfiles/.vimrc \
 
 subdirs = \
           $(dotfiles) \
