@@ -24,4 +24,4 @@ config.tgz:
 
 
 vscode_extentions.tgz:
-	tar zfc $@ dotdirs
+	tar zfc $@ dotdirs/.vscode/extensions
