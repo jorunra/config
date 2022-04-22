@@ -1,6 +1,5 @@
 {
     "workbench.colorTheme": "Nord",
-    "workbench.iconTheme": "vscode-icons",
     "terminal.integrated.fontFamily": "UbuntuMonoDerivativePowerline Nerd Font",
     "terminal.integrated.fontsize": 14,
     "todo-tree.tree.showScanModeButton": false,

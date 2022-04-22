@@ -76,6 +76,7 @@ plugins=(
   python
   tmux
   vscode
+  pipenv
   z
 )
 

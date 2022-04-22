@@ -12,6 +12,7 @@ dotfiles = \
     dotfiles/.zshrc \
     dotfiles/settings.json \
     dotfiles/.vimrc \
+    dotfiles/.p10k.zsh
 
 subdirs = \
           $(dotfiles) \
@@ -21,7 +22,7 @@ subdirs = \
           scripts
 
 config.tgz:
-	tar zfc $@ $(subdirs)
+	tar zfc $@ --exclude "dotdirs/go/pkg" $(subdirs) 
 
 
 vscode_extentions.tgz:
