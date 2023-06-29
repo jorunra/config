@@ -1,6 +1,5 @@
 {
-    "workbench.colorTheme": "Nord",
-    "terminal.integrated.fontFamily": "UbuntuMonoDerivativePowerline Nerd Font",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.fontsize": 14,
     "todo-tree.tree.showScanModeButton": false,
     "todo-tree.highlights.enabled": true,
@@ -44,5 +43,6 @@
     },
     "redhat.telemetry.enabled": false,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Nord Dark Contrast"
 }
